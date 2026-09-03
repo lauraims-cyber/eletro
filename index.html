@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VoltDrive - Mobilidade Elétrica de Excelência</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <!-- Barra de Acessibilidade PCD -->
+  <div class="accessibility-bar" aria-label="Controles de Acessibilidade">
+    <button id="btn-font-increase" aria-label="Aumentar tamanho do texto">A+</button>
+    <button id="btn-font-decrease" aria-label="Diminuir tamanho do texto">A-</button>
+    <button id="btn-theme-toggle" aria-label="Alternar modo claro e escuro">Modo Escuro</button>
+  </div>
+
+  <!-- Cabeçalho e Pesquisa -->
+  <header role="banner">
+    <div class="logo">VOLTDRIVE</div>
+    
+    <nav role="navigation" aria-label="Menu Principal">
+      <ul>
+        <li><a href="#sobre">Sobre Nós</a></li>
+        <li><a href="#tecnologia">Tecnologia</a></li>
+        <li><a href="#modelos">Modelos</a></li>
+      </ul>
+    </nav>
+
+    <div class="search-box" role="search">
+      <input type="text" id="site-search" placeholder="Buscar no site..." aria-label="Campo de pesquisa">
+      <button id="btn-search" aria-label="Executar pesquisa">Buscar</button>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main role="main">
+    <section id="sobre" class="hero">
+      <h1>VoltDrive: Excelência em Mobilidade Elétrica</h1>
+      <p>Com um compromisso inabalável com a sustentabilidade e alto profissionalismo, a VoltDrive lidera o setor de veículos elétricos. Nossa engenharia de alta precisão combina sofisticação, potência limpa e a máxima segurança para transformar a sua experiência de condução.</p>
+    </section>
+
+    <section id="tecnologia">
+      <h2>Engenharia de Alta Performance</h2>
+      <p>Explore em detalhes a tecnologia dos nossos veículos, desde a aerodinâmica externa até os sistemas eletrônicos internos:</p>
+
+      <div class="gallery">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=800&q=80" alt="Vista exterior de um carro elétrico moderno prateado com faróis de LED acesos">
+          <h3>Design Exterior e Faróis LED</h3>
+          <p>Estrutura aerodinâmica otimizada para baixo consumo de energia, contando com faróis matriciais em LED de última geração.</p>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=800&q=80" alt="Painel e cockpit interior digital interativo com telas sensíveis ao toque">
+          <h3>Cockpit e Painel Digital</h3>
+          <p>Interior luxuoso com painéis digitais configuráveis, comandos por voz e integração completa com assistentes virtuais.</p>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1558441719-6779b681498b?auto=format&fit=crop&w=800&q=80" alt="Motor elétrico e componentes mecânicos e elétricos expostos sob o capô">
+          <h3>Motorização Elétrica e Bateria</h3>
+          <p>Propulsão 100% elétrica com torque instantâneo e baterias de alta densidade com gerenciamento térmico avançado.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2026 VoltDrive. Todos os direitos reservados. Projeto focado em inclusão, acessibilidade e sustentabilidade.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
