@@ -1,1 +1,169 @@
+/* Variáveis de Cores (Paleta Solicitada) */
+:root {
+  --bg-color: #f5f2eb;       /* Bege de fundo */
+  --text-color: #000000;     /* Preto */
+  --card-bg: #ffffff;        /* Branco */
+  --accent-color: #c0c0c0;   /* Prata */
+  --header-bg: #000000;      /* Preto para cabeçalho */
+  --header-text: #ffffff;    /* Branco */
+  --font-size-base: 16px;
+}
 
+/* Modo Escuro / Alto Contraste para Acessibilidade */
+body.dark-mode {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --card-bg: #1e1e1e;
+  --accent-color: #555555;
+  --header-bg: #000000;
+  --header-text: #ffffff;
+}
+
+html {
+  font-size: var(--font-size-base);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Barra de Ferramentas de Acessibilidade */
+.accessibility-bar {
+  background-color: var(--accent-color);
+  padding: 8px 16px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.accessibility-bar button {
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.accessibility-bar button:focus {
+  outline: 3px solid #ffffff;
+}
+
+/* Cabeçalho e Navegação */
+header {
+  background-color: var(--header-bg);
+  color: var(--header-text);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: var(--header-text);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:focus, nav a:hover {
+  text-decoration: underline;
+  outline: 2px solid var(--accent-color);
+}
+
+/* Campo de Pesquisa */
+.search-box {
+  display: flex;
+  gap: 5px;
+}
+
+.search-box input {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-box button {
+  background-color: var(--accent-color);
+  color: #000;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.search-box button:hover {
+  background-color: #a8a8a8;
+}
+
+/* Estrutura Principal */
+main {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.hero {
+  background-color: var(--card-bg);
+  border: 2px solid var(--accent-color);
+  padding: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+/* Galeria de Fotos */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--accent-color);
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 15px;
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 3px solid var(--accent-color);
+  border-radius: 4px;
+}
+
+/* Rodapé */
+footer {
+  background-color: var(--header-bg);
+  color: var(--header-text);
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
